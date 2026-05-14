@@ -1,7 +1,8 @@
 :root{
     --bg-color-dark: #000000;
     --bg-color: #ffffff;
-    --font-color: #e6e6e6;
+    --font-color: #181616;
+    --font-color-white: #e6e6e6;
     --btn-bg-color: #1976ef;
     --hero-color1: #117aef;
     --hero-color2: #44cb86;
@@ -27,6 +28,7 @@ body {
 .hero {
     background: linear-gradient(150deg, var(--hero-color1), var(--hero-color2));
     display: grid;
+    color: var(--font-color-white);
     grid-template-areas: "content"
                          "image"
                          "button";
@@ -66,7 +68,6 @@ body {
 
 .btn-start {
     background-color: var(--btn-bg-color);
-    color: var(--font-color);
     font-weight: bold;
     border: none;
     border-radius: 10px;
@@ -74,10 +75,47 @@ body {
     box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
     cursor: pointer;
     transition: .3s;
+    color: var(--font-color-white);
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .btn-start:hover{
     transform: translateY(-2px);
+}
+
+.benefits{
+    display: grid;
+    grid-template-areas: "title title title"
+                         "benefit1 benefit2 benefit3";
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.benefits-title{
+    grid-area: title;
+}
+
+.benefits-1{
+    grid-area: benefit1;
+}
+
+.benefits-2{
+    grid-area: benefit2;
+}
+
+.benefits-3{
+    grid-area: benefit3;
+}
+
+.card-b {
+    margin: 8px 10%;
+    max-width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
 }
 
 @media (min-width: 768px){
