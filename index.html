@@ -44,6 +44,130 @@
                 <p>Sin costos ocultos, desglose detallado</p>
             </div>
         </section>
+        <section class="container">
+            <input type="radio" name="step" id="step1" checked>
+            <input type="radio" name="step" id="step2">
+            <input type="radio" name="step" id="step3">
+            <input type="radio" name="step" id="step4">
+
+            <div class="progress-bar">
+
+                <div class="progress-line"></div>
+            
+                <div class="step-indicator step-indicator-1">
+                    <span></span>
+                </div>
+            
+                <div class="step-indicator step-indicator-2">
+                    <span></span>
+                </div>
+            
+                <div class="step-indicator step-indicator-3">
+                    <span></span>
+                </div>
+            
+                <div class="step-indicator step-indicator-4">
+                    <span></span>
+                </div>
+            
+            </div>
+
+            <!-- Select Platform -->
+            <section class="step step1">
+                <h2>Paso 1</h2>
+                <p>¿Dónde vivirá tu app?</p>
+        
+                <div class="options">
+        
+                    <!-- iOS -->
+                    <input type="checkbox" id="ios">
+                
+                    <label for="ios" class="card">
+                        <h3>iOS</h3>
+                        <p>iPhone / iPad</p>
+                    </label>
+                
+                    <!-- Android -->
+                    <input type="checkbox" id="android">
+                
+                    <label for="android" class="card">
+                        <h3>Android</h3>
+                        <p>Teléfonos / Tablets</p>
+                    </label>
+                
+                    <!-- Web -->
+                    <input type="checkbox" id="web">
+                
+                    <label for="web" class="card">
+                        <h3>Web</h3>
+                        <p>Navegador</p>
+                    </label>
+                
+                </div>
+        
+                <label for="step2" class="btn">
+                    Siguiente
+                </label>
+            </section>
+        
+            <!-- PASO 2 -->
+            <section class="step step2">
+                <h2>Paso 2</h2>
+                <p>Nivel de diseño</p>
+        
+                <div class="options">
+                    <div class="card">Básico</div>
+                    <div class="card">Personalizado</div>
+                    <div class="card">Premium</div>
+                </div>
+        
+                <div class="buttons">
+                    <label for="step1" class="btn">
+                        Atrás
+                    </label>
+        
+                    <label for="step3" class="btn">
+                        Siguiente
+                    </label>
+                </div>
+            </section>
+        
+            <!-- PASO 3 -->
+            <section class="step step3">
+                <h2>Paso 3</h2>
+        
+                <p>Funcionalidades</p>
+        
+                <div class="options">
+                    <div class="card">Login</div>
+                    <div class="card">Pagos</div>
+                    <div class="card">Chat</div>
+                </div>
+        
+                <div class="buttons">
+                    <label for="step2" class="btn">
+                        Atrás
+                    </label>
+        
+                    <label for="step4" class="btn">
+                        Siguiente
+                    </label>
+                </div>
+            </section>
+        
+            <!-- PASO 4 -->
+            <section class="step step4">
+                <h2>Resultado</h2>
+        
+                <div class="result">
+                    $15.000 - $25.000 USD
+                </div>
+        
+                <label for="step1" class="btn">
+                    Reiniciar
+                </label>
+            </section>
+        </section>
     </main>
     <footer class="footer">
         <div>
