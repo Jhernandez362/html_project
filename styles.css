@@ -30,6 +30,12 @@ body {
     color: var(--font-color);
 }
 
+a{
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--bg-color-dark);
+}
+
 
 /* Hero */
 /*--------------*/
@@ -618,6 +624,119 @@ input[type="checkbox"] {
     font-weight: 700;
 }
 
+/* Cobtact */
+/* --------------------- */
+
+.contact{
+    width:100%;
+    padding:4rem 10%;
+}
+
+.contact-wrapper{
+    max-width:1100px;
+    margin:auto;
+}
+
+.contact-title{
+    text-align:center;
+    margin-bottom:3rem;
+    font-weight:700;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:2rem;
+}
+
+.contact-form-box{
+    padding:1.5rem;
+    border-radius:12px;
+    border:1px solid var(--icon-color);
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.contact-form-box h3{
+    margin-bottom:1.5rem;
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:1.2rem;
+}
+
+.input-group label{
+    margin-bottom:.5rem;
+    font-weight:600;
+}
+
+.input-group label span{
+    color:red;
+}
+
+.input-group input,
+.input-group textarea{
+    border:1px solid var(--icon-color);
+    border-radius:8px;
+    padding:.9rem 1rem;
+    outline:none;
+    transition:.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus{
+    border-color: var(--btn-bg-color);
+}
+
+.contact-submit{
+    background: var(--btn-bg-color);
+    color: var(--bg-color);
+    border:none;
+    border-radius:8px;
+    padding:.9rem 1.5rem;
+    cursor:pointer;
+    transition:.3s;
+    margin-left:auto;
+    display:block;
+    font-size: 1rem;
+}
+
+.contact-submit:hover{
+    background: var(--btn-hover-color);
+}
+
+.resources h3{
+    margin-bottom:1rem;
+}
+
+.resource-card{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    background:var(--bg-color);
+    border:1px solid var(--icon-color);
+    border-radius:10px;
+    padding:1rem;
+    margin-bottom:1rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.resource-card:hover{
+    transform:translateY(-2px);
+    box-shadow:0 4px 12px rgba(0,0,0,.06);
+}
+
+.resource-card i{
+    font-size:1.3rem;
+    color: var(--icon-color);
+}
+
+.resource-card span{
+    line-height:1.4;
+}
+
 /*Tablet*/
 @media (min-width: 768px) {
 
@@ -738,6 +857,16 @@ input[type="checkbox"] {
     .table-row {
         border-top: 1px solid #eee;
     }
+
+    /* Contact */
+    /* ******* */
+
+    .contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:2rem;
+}
+
 
 }
 
@@ -862,4 +991,13 @@ input[type="checkbox"] {
     .table-row {
         border-top: 1px solid #eee;
     }
+
+    /* Contact */
+    /* ******* */
+    
+    .contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:2rem;
+}
 }

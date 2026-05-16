@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="hero">
+    <header class="hero" id="home">
         <div class="hero-content">
             <h1>Estime el Costo de su Proyecto de Software al Instante.</h1>
             <p>Obtenga una previsión precisa y transparente para impulsar su desarrollo digital.</p>
@@ -24,7 +24,9 @@
             <img src="./assets/hero_image.png" alt="Hero Image">
         </div>
         <div class="hero-btn">
-            <button class="btn-start">Comenzar</button>
+            <a href="#estimator-section" class="btn-start">
+                Comenzar
+            </a>
         </div>
     </header>
     <main>
@@ -48,7 +50,7 @@
                 <p>Sin costos ocultos, desglose detallado</p>
             </div>
         </section>
-        <section class="container">
+        <section class="container" id="estimator-section">
             <input type="radio" name="step" id="step1" checked>
             <input type="radio" name="step" id="step2">
             <input type="radio" name="step" id="step3">
@@ -288,16 +290,71 @@
                 </div>
             </section>
         </section>
+        <section class="contact" id="contact-section">
+            <div class="contact-wrapper">
+                <h2 class="contact-title">
+                    ¡Casi listo! Envíanos tus detalles para recibir una estimación personalizada.
+                </h2>
+                <div class="contact-grid">
+                    <div class="contact-form-box">
+                        <h3>Formulario de Contacto</h3>
+                        <div class="input-group">
+                            <label>
+                                Nombre Completo <span>*</span>
+                            </label>
+                            <input type="text" placeholder="Ej: Ana García">
+                        </div>
+                        <div class="input-group">
+                            <label>
+                                Correo Electrónico <span>*</span>
+                            </label>
+                            <input type="email" placeholder="Ej: ana@email.com">
+                        </div>
+                        <div class="input-group">
+                            <label>
+                                Mensaje (Opcional)
+                            </label>
+                            <textarea rows="5" placeholder="Describe tu proyecto brevemente..."></textarea>
+                        </div>
+                        <button class="contact-submit">
+                            Enviar Solicitud
+                        </button>
+                    </div>
+
+                    <div class="resources">
+                        <h3>Recursos Educativos</h3>
+                        <div class="resource-card">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>
+                                Guía: Cómo Estimar Proyectos de Software
+                            </span>
+                        </div>
+                        <div class="resource-card">
+                            <i class="fa-regular fa-file-lines"></i>
+                            <span>
+                                Artículo: Factores Clave en el Costo de Desarrollo
+                            </span>
+                        </div>
+                        <div class="resource-card">
+                            <i class="fa-solid fa-video"></i>
+                            <span>
+                                Webinar: Mejores Prácticas de Estimación
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div>
             <p>© 2026 CostEstimatorApp. Todos los derechos reservados.</p>
         </div>
         <div class="footer-options">
-            <p>Inicio</p>
+            <a href="#home">Inicio</a>
             <p>Caracteristicas</p>
             <p>Precios</p>
-            <p>Contacto</p>
+            <a href="#contact-section">Contacto</a>
             <p>Privacidad</p>
             <p>Términos</p>
         </div>
