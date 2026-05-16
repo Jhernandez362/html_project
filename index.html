@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,12 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/151970cc4d.js"></script>
 </head>
+
 <body>
     <header class="hero">
         <div class="hero-content">
@@ -50,136 +54,133 @@
             <input type="radio" name="step" id="step3">
             <input type="radio" name="step" id="step4">
 
-            <div class="progress-bar">
+            <input type="checkbox" id="ios">
+            <input type="checkbox" id="android">
+            <input type="checkbox" id="web">
 
+            <input type="radio" name="design" id="basic-design">
+            <input type="radio" name="design" id="personal-design">
+            <input type="radio" name="design" id="premium-design">
+
+            <input type="checkbox" id="email">
+            <input type="checkbox" id="pay">
+            <input type="checkbox" id="maps">
+            <input type="checkbox" id="msn">
+            <input type="checkbox" id="adm-web">
+
+            <div class="progress-bar">
                 <div class="progress-line"></div>
-            
                 <div class="step-indicator step-indicator-1">
                     <span></span>
                 </div>
-            
                 <div class="step-indicator step-indicator-2">
                     <span></span>
                 </div>
-            
                 <div class="step-indicator step-indicator-3">
                     <span></span>
                 </div>
-            
                 <div class="step-indicator step-indicator-4">
                     <span></span>
                 </div>
-            
             </div>
 
             <!-- Select Platform -->
             <section class="step step1">
                 <h2>Paso 1 de 5</h2>
                 <p>Selección de Plataforma.</p>
-        
+
                 <div class="options">
-                    <input type="checkbox" id="ios">
                     <label for="ios" class="card">
                         <i class="fa-brands fa-apple"></i>
                         <h3>iOS</h3>
                         <p>Aplicaciones para iPhone y IPad.</p>
                     </label>
-                
-                    <input type="checkbox" id="android">
+
                     <label for="android" class="card">
                         <i class="fa-brands fa-android"></i>
                         <h3>Android</h3>
                         <p>Aplicaciones para dispositivos Android.</p>
                     </label>
-                
-                    <input type="checkbox" id="web">
+
                     <label for="web" class="card">
                         <i class="fa-solid fa-globe" style="color: rgb(128, 131, 136);"></i>
                         <h3>Web</h3>
                         <p>Aplicaciones y sitios web accesibles.</p>
                     </label>
-                
+
                 </div>
-        
+
                 <div class="buttons">
                     <label for="step2" class="btn btn-right">
                         Siguiente
                     </label>
                 </div>
             </section>
-        
+
             <!-- Design -->
             <section class="step step2">
                 <h2>Paso 2</h2>
                 <p>Nivel de diseño</p>
-        
+
                 <div class="options">
-                    <input type="radio" name="design" id="basic-design">
                     <label for="basic-design" class="card">
                         <h3>Básico</h3>
                         <img src="./assets/basic-design.png" alt="Basic Design">
                         <p>Plantilla Limpia</p>
                     </label>
-                    <input type="radio" name="design" id="personal-design">
                     <label for="personal-design" class="card">
                         <h3>Personalizado</h3>
                         <img src="./assets/personal-design.png" alt="Personal Design">
                         <p>Marca Única</p>
                     </label>
-                    <input type="radio" name="design" id="premium-design">
                     <label for="premium-design" class="card">
                         <h3>Premium</h3>
                         <img src="./assets/premium-design.png" alt="Premium Design">
                         <p>Animaciones y Detalles</p>
                     </label>
                 </div>
-        
+
                 <div class="buttons">
                     <label for="step1" class="btn btn-left">
                         Atrás
                     </label>
-        
+
                     <label for="step3" class="btn btn-right">
                         Siguiente
                     </label>
                 </div>
             </section>
-        
+
             <!-- Features -->
             <section class="step step3">
                 <h2>Paso 3</h2>
                 <p>Funcionalidades clave</p>
-        
+
                 <div class="options-features">
-                    <input type="checkbox" id="email">
                     <label for="email" class="feature-option">
                         <div class="feature-icon">
                             <i class="fa-solid fa-envelope"></i>
                         </div>
                         <p>Inicio de Sesión (Email/Social).</p>
                     </label>
-                    <input type="checkbox" id="pay">
                     <label for="pay" class="feature-option">
                         <div class="feature-icon">
                             <i class="fa-solid fa-credit-card"></i>
                         </div>
                         <p>Pagos en Línea (Stripe/Paypal).</p>
                     </label>
-                    <input type="checkbox" id="maps">
                     <label for="maps" class="feature-option">
                         <div class="feature-icon">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
                         <p>Mapa & Geolocalización.</p>
                     </label>
-                    <input type="checkbox" id="msn">
                     <label for="msn" class="feature-option">
                         <div class="feature-icon">
                             <i class="fa-solid fa-comments"></i>
                         </div>
                         <p>Mensajería/Chat.</p>
                     </label>
-                    <input type="checkbox" id="adm-web">
                     <label for="adm-web" class="feature-option">
                         <div class="feature-icon">
                             <i class="fa-solid fa-chart-line"></i>
@@ -187,25 +188,96 @@
                         <p>Panel de Administración Web.</p>
                     </label>
                 </div>
-        
+
                 <div class="buttons">
                     <label for="step2" class="btn btn-left">
                         Atrás
                     </label>
-        
+
                     <label for="step4" class="btn btn-right">
                         Siguiente
                     </label>
                 </div>
             </section>
-        
+
             <!-- Price -->
             <section class="step step4">
-                <h2>Resultado</h2>
-        
-                <div class="result">
-                    $15.000 - $25.000 USD
+
+                <h2>Costo Estimado</h2>
+                <div class="results-grid">
+                    <!-- Platform -->
+                    <div class="result-card">
+                        <div class="result-header">
+                            <h3>Plataformas</h3>
+                            <span class="platform-price">$6,000</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-fill platform-fill"></div>
+                        </div>
+                    </div>
+
+                    <!-- Design -->
+                    <div class="result-card">
+                        <div class="result-header">
+                            <h3>Diseño</h3>
+                            <span class="design-price">$12,000</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-fill design-fill"></div>
+                        </div>
+                    </div>
+
+                    <!-- Features -->
+                    <div class="result-card">
+                        <div class="result-header">
+                            <h3>Funcionalidades</h3>
+                            <span class="features-price">$18,000</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-fill features-fill"></div>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="total-price">
+                    Total:
+                    <span class="total-value">$36,000 USD</span>
+                </div>
+
+                <div class="details-table">
+                    <div class="table-header">
+                        <div>Categoría</div>
+                        <div>Descripción</div>
+                        <div>Horas</div>
+                        <div>Precio</div>
+                    </div>
+
+                    <div class="table-row">
+                        <div>Plataformas</div>
+                        <div>iOS / Android / Web</div>
+                        <div>120h</div>
+                        <div>$6,000</div>
+                    </div>
+
+                    <div class="table-row">
+                        <div>Diseño</div>
+                        <div>UI/UX y prototipos</div>
+                        <div>80h</div>
+                        <div>$12,000</div>
+                    </div>
+
+                    <div class="table-row">
+                        <div>Features</div>
+                        <div>Chat, pagos, mapas</div>
+                        <div>160h</div>
+                        <div>$18,000</div>
+                    </div>
+                </div>
+
+                <a href="./assets/Dialnet-EstimacionDeProyectosDeSoftware.pdf"   target="_blank"   class="pdf-btn">
+                    <i class="fa-solid fa-file-pdf"></i>Ver Reporte pdf
+                </a>
+
                 <div class="buttons">
                     <label for="step3" class="btn btn-left">
                         Atrás
